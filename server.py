@@ -39,6 +39,6 @@ def submit_form():
 	        write_to_csv(data)
 	        return redirect('/thankyou.html')
         except:
-      	    return 'did not save to database'
+      	    return 'Information did not save to database. Please try again.'
     else:
-    	return 'something went wrong, please try again!'
+    	return 'Something went wrong, please try again!'
